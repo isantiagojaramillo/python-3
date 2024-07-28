@@ -8,9 +8,15 @@ class Curso():
         self.nombre = nombre
         self.creditos = credito
         self.profesion = profesion
+        self.__imparticion = "Presencial" # Propiedad encapsulada
+
+    def mostrarDatos(self):
+        data = "Nombre: {0} / Créditos: {1} / Modo de impartición: {2}"
+        print(data.format(self.nombre, self.creditos, self.profesion, self.__imparticion))
+
 
 curso1 = Curso("Matemáticas", 5, "Ingenieria Civil")
 print(curso1.nombre)
 
-curso2 = Curso("Idiomas", 4, "Ingenieria Industrial")
-print(curso2.nombre)
+# curso2 = Curso("Idiomas", 4, "Ingenieria Industrial")
+# print(curso2.nombre)
