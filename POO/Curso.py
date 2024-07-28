@@ -13,10 +13,24 @@ class Curso():
     def mostrarDatos(self):
         data = "Nombre: {0} / Créditos: {1} / Modo de impartición: {2}"
         print(data.format(self.nombre, self.creditos, self.profesion, self.__imparticion))
+        docenteAsignado = self.__verificarDocente()
+        if docenteAsignado:
+            print("Existe docente asignado")
+        else:
+            print("No es necesario asignar docente")
+
+    # Función encapsulada
+    def __verificarDocente(self):
+        print("Verificando si existe docente asignado...")
+        if self.__imparticion == "Presencial":
+            return True
+        else:
+            return False
 
 
 curso1 = Curso("Matemáticas", 5, "Ingenieria Civil")
 print(curso1.nombre)
+curso1.mostrarDatos()
 
 # curso2 = Curso("Idiomas", 4, "Ingenieria Industrial")
 # print(curso2.nombre)
