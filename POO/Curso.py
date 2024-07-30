@@ -26,10 +26,18 @@ class Curso():
             return True
         else:
             return False
-
+        
+    # toString
+    # Esta función nos va a servir para poder indicar el 
+    # texto que se tiene que mostrar cuando accedemos a 
+    # imprimir un objeto o instancia sin indicar una 
+    # variable o función especifica
+    def __str__(self):
+        texto = "Nombre {0} - Crédito {1}"
+        return texto.format(self.nombre, self.creditos)
 
 curso1 = Curso("Matemáticas", 5, "Ingenieria Civil")
-print(curso1.nombre)
+print(curso1)
 curso1.mostrarDatos()
 
 # curso2 = Curso("Idiomas", 4, "Ingenieria Industrial")
