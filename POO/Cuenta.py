@@ -11,7 +11,7 @@ class Cuenta():
 # ni leer desde fuera de la clase
 
     # Getters (Métodos GET)
-    def get_Salso(self):
+    def get_Saldo(self):
         return self.__saldo
     
     def get_Propietario(self):
@@ -25,7 +25,7 @@ class Cuenta():
         self.__moneda = moneda
 
 cuenta1 = Cuenta("Santiago J", 1500, "Soles")
-print(cuenta1.get_Salso())
+print(cuenta1.get_Saldo())
 print(cuenta1.get_Moneda())
 cuenta1.set_Moneda("Dolares")
 print(cuenta1.get_Moneda())

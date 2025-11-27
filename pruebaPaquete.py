@@ -12,8 +12,8 @@ Lo que hace __init__.py es "convertir" un directorio en un modulo (paquete)
 que contiene otros modulos, y esto lo hace para poder importarlos
 
 """
-from Paquete.funcionesNumericas import *;
-from Paquete.funcionesCadena import *;
+from Paquete.funcionesNumericas import *
+from Paquete.funcionesCadena import *
 
 print(multiplicar(5, 6));
 print(contarLetras("Hello"));

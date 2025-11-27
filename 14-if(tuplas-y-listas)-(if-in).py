@@ -1,12 +1,12 @@
-menu = "Menu\n";
+menu = "Menu\n"
 menu += "Matematicas\n";
 menu += "Biología\n";
 menu += "Lenguaje\n";
 menu += "Ciencias\n";
 
-curso = input("Ingrese el curso deseado: \n"+ menu).capitalize();
+curso = input(menu +"Ingrese el curso deseado: \n").capitalize();
 
-if curso in ("Matematicas", "Biologia", "Lenguaje", "Ciencias"):
+if curso in ("Matematicas", "Biología", "Lenguaje", "Ciencias"):
     print("Curso {} seleccionado".format(curso));
 else:
     print("No existe ese curso");

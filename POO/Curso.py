@@ -8,7 +8,7 @@ class Curso():
         self.nombre = nombre
         self.creditos = credito
         self.profesion = profesion
-        self.__imparticion = "Presencial" # Propiedad encapsulada
+        self.__imparticion = "Presencial" # Propiedad encapsulada con dos guiones bajos.
 
     def mostrarDatos(self):
         data = "Nombre: {0} / Créditos: {1} / Modo de impartición: {2}"

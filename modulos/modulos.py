@@ -12,9 +12,8 @@ Modularización y reutilización.
 # import funcionesMatematicas;
 # import funcionesMatematicas as fm;
 # from modulos.funcionesMatematicas import sumar, multiplicar;
-from modulos.funcionesMatematicas import *;
-
+from funcionesMatematicas import *
 # print(funcionesMatematicas.sumar(5,6));
 # print(fm.sumar(5,6));
-sumar(5, 6);
-multiplicar(5,6);
+print(sumar(5, 6))
+print(multiplicar(5,6))
